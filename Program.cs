@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CatWorx.BadgeMaker
 {
@@ -35,9 +36,23 @@ namespace CatWorx.BadgeMaker
         // num ++;
         // Console.WriteLine(num);
 
-        bool isCold = true;
-        Console.WriteLine(isCold ? "drink" : "add ice");  // output: drink
-        Console.WriteLine(!isCold ? "drink" : "add ice");  // output: add ice
+        // bool isCold = true;
+        // Console.WriteLine(isCold ? "drink" : "add ice");  // output: drink
+        // Console.WriteLine(!isCold ? "drink" : "add ice");  // output: add ice
+
+        // string stringNum = "2";
+        // int intNum = Convert.ToInt32(stringNum); //Int32 designates storage available for variable - 2^32 or 4,294,967,296 values 
+        // Console.WriteLine(intNum);
+        // Console.WriteLine(intNum.GetType());
+
+        Dictionary<string, int> myScoreBoard = new Dictionary<string, int>();
+        myScoreBoard.Add("firstInning", 10);
+        myScoreBoard.Add("secondInning", 20);
+        myScoreBoard.Add("thirdInning", 30);
+        myScoreBoard.Add("fourthInning", 40);
+        myScoreBoard.Add("fifthInning", 50);
+
+
     }
   }
 }
