@@ -52,6 +52,12 @@ namespace CatWorx.BadgeMaker
         myScoreBoard.Add("fourthInning", 40);
         myScoreBoard.Add("fifthInning", 50);
 
+        Dictionary<string, int> carCost = new Dictionary<string, int>(){
+          {"F350", 76000},
+          {"Tundra", 70000}
+        };
+
+        Console.WriteLine(carCost["F350"]);
 
     }
   }
