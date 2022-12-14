@@ -36,6 +36,7 @@ namespace CatWorx.BadgeMaker
         // num ++;
         // Console.WriteLine(num);
 
+  ///////////////////////// Booleans
         // bool isCold = true;
         // Console.WriteLine(isCold ? "drink" : "add ice");  // output: drink
         // Console.WriteLine(!isCold ? "drink" : "add ice");  // output: add ice
@@ -45,19 +46,27 @@ namespace CatWorx.BadgeMaker
         // Console.WriteLine(intNum);
         // Console.WriteLine(intNum.GetType());
 
-        Dictionary<string, int> myScoreBoard = new Dictionary<string, int>();
-        myScoreBoard.Add("firstInning", 10);
-        myScoreBoard.Add("secondInning", 20);
-        myScoreBoard.Add("thirdInning", 30);
-        myScoreBoard.Add("fourthInning", 40);
-        myScoreBoard.Add("fifthInning", 50);
+  ///////////////////////// Dictionaries 
+        // Dictionary<string, int> myScoreBoard = new Dictionary<string, int>();
+        // myScoreBoard.Add("firstInning", 10);
+        // myScoreBoard.Add("secondInning", 20);
+        // myScoreBoard.Add("thirdInning", 30);
+        // myScoreBoard.Add("fourthInning", 40);
+        // myScoreBoard.Add("fifthInning", 50);
 
-        Dictionary<string, int> carCost = new Dictionary<string, int>(){
-          {"F350", 76000},
-          {"Tundra", 70000}
-        };
+        // Dictionary<string, int> carCost = new Dictionary<string, int>(){
+        //   {"F350", 76000},
+        //   {"Tundra", 70000}
+        // };
+        // Console.WriteLine(carCost["F350"]);
 
-        Console.WriteLine(carCost["F350"]);
+  //////////////////// Arrays 
+        string[] favFoods = new string[3]{"pizza", "pho", "Burrito"};
+        string firstFav = favFoods[0];
+        string secondFav = favFoods[1];
+        string thirdFav = favFoods[2];
+        Console.WriteLine("I like {0}, {1}, and {2}", firstFav, secondFav, thirdFav);
+
 
     }
   }
