@@ -72,8 +72,21 @@ namespace CatWorx.BadgeMaker
         employee.Add("Matt");
         employee.Add("Jim");
 
-        Console.WriteLine("First Employee = {0}", employee[0]);
+        // Console.WriteLine("First Employee = {0}", employee[0]);
 
+  /////////////////// Loops
+      // foreach (string i in employee)
+      // {
+      //   Console.WriteLine(i);
+      // }
+
+
+      
+      for (int i = 0; i < employee.Count; i++ )
+      {
+        Console.WriteLine(employee[i]);
+      }
     }
+
   }
 }
