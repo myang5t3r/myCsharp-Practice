@@ -61,12 +61,18 @@ namespace CatWorx.BadgeMaker
         // Console.WriteLine(carCost["F350"]);
 
   //////////////////// Arrays 
-        string[] favFoods = new string[3]{"pizza", "pho", "Burrito"};
-        string firstFav = favFoods[0];
-        string secondFav = favFoods[1];
-        string thirdFav = favFoods[2];
-        Console.WriteLine("I like {0}, {1}, and {2}", firstFav, secondFav, thirdFav);
+        // string[] favFoods = new string[3]{"pizza", "pho", "Burrito"};
+        // string firstFav = favFoods[0];
+        // string secondFav = favFoods[1];
+        // string thirdFav = favFoods[2];
+        // Console.WriteLine("I like {0}, {1}, and {2}", firstFav, secondFav, thirdFav);
 
+  //////////////////// List
+        List<string> employee = new List<string>() {"Adam", "Amy"};      
+        employee.Add("Matt");
+        employee.Add("Jim");
+
+        Console.WriteLine("First Employee = {0}", employee[0]);
 
     }
   }
