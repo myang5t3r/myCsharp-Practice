@@ -8,21 +8,26 @@ namespace CatWorx.BadgeMaker
     static void Main(string[] args)
     {
       // Create list of employees
-      List<string> employees =  new List<string>(){"Matt", "Andy", "Bill"};
-      //  Add employees with Add method
-      employees.Add("Vanessa");
-      employees.Add("Lily");
-      Console.WriteLine("Please enter a name:");
-
-      // use ReadLine method to assign user input to a variable
-      // note: ReadLine causes runtime halt and waits for input
-      string input = Console.ReadLine() ?? "";
-      employees.Add(input);
-
-      // print employees list to console
-      foreach (string employee in employees )
+      List<string> employees =  new List<string>();
+      while (true)
       {
-            Console.WriteLine(employee);
+            Console.WriteLine("Please enter a name:");
+            // use ReadLine method to assign user input to a variable
+            // note: ReadLine causes runtime halt and waits for input
+
+            // note coalescing operator ?? - similar to ternary operator in js
+            // operator checks for null value and if null replace with "" (empty string)
+            string input = Console.ReadLine() ?? "";
+            if (input == "")
+            {
+                  break;
+            }
+            employees.Add(input);
+            // print employees list to console
+            foreach (string employee in employees )
+            {
+                  Console.WriteLine(employee);
+            }
       }
 
     }
