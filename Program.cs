@@ -49,7 +49,9 @@ namespace CatWorx.BadgeMaker
             // print employees list to console
             for (int i = 0; i < employees.Count; i++)
             {
-                Console.WriteLine(employees[i].GetFullName());
+                // String.Format is like template literals, defines how its values are formatted
+                string template = "{0,-10}\t{1,-20}\t{2}";
+                Console.WriteLine(String.Format(template, employees[i].GetId(), employees[i].GetFullName(), employees[i].GetPhotoUrl()));
             }
         }
         static void Main(string[] args)
